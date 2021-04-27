@@ -9,11 +9,15 @@
   "author": "Jarrete Barnett",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^5.0.1",
+    "connect-session-sequelize": "^7.1.1",
+    "connection-manager": "^1.0.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "express-handlebars": "^5.3.0",
     "express-session": "^1.17.1",
     "inquirer": "^6.5.2",
+    "mysql2": "^2.2.5",
     "sequelize": "^6.6.2"
   }
 }

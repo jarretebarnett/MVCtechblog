@@ -7,7 +7,7 @@ Blogger.hasMany(Post, {
 
 });
 
-Post.belongTo(Blogger, {
+Post.belongsTo(Blogger, {
     foreignKey: 'blogger_id'
 });
 
