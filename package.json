@@ -1,14 +1,19 @@
 {
-  "name": "static-site",
+  "name": "techblog",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Jarrete Barnett",
   "license": "ISC",
   "dependencies": {
-    "inquirer": "^6.3.1"
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.0",
+    "express-session": "^1.17.1",
+    "inquirer": "^6.5.2",
+    "sequelize": "^6.6.2"
   }
 }
