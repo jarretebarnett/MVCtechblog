@@ -22,7 +22,7 @@ const loginForm = async (event) => {
 const signupForm = async (event) => {
     event.preventDefault();
     console.log('button click');
-    
+
     const name = document.querySelector('#name-signup').value.trim();
     const email = document.querySelector('#email-signup').value.trim();
     const password = document.querySelector('#password-signup').value.trim();
@@ -44,9 +44,9 @@ const signupForm = async (event) => {
   
 document
   .querySelector('.login-form')
-  .addEventListener('click', loginForm);
+  .addEventListener('submit', loginForm);
   
 document
-  .querySelector('#signup-form')
-  .addEventListener('click', signupForm);
+  .querySelector('.signup-form')
+  .addEventListener('Submit', signupForm);
   
