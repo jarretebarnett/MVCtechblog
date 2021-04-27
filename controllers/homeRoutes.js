@@ -53,9 +53,9 @@ router.get('/project/:id', async (req, res) => {
 router.get('/profile', withAuth, async (req, res) => {
   try {
     // Find the logged in user based on the session ID
-    const bloggerData = await Blogger.findByPk(req.session.user_id, {
+    const bloggerData = await Blogger.findByPk(req.session.blogger_id, {
       attributes: { exclude: ['password'] },
-      include: [{ model: Project }],
+      include: [{ model: Post }],
     });
 
     const blogger = bloggerData.get({ plain: true });
@@ -77,6 +77,16 @@ router.get('/login', (req, res) => {
   }
 
   res.render('login');
+});
+
+router.get('/signup', (req, res) => {
+  // If the user is already logged in, redirect the request to another route
+  if (req.session.logged_in) {
+    res.redirect('/profile');
+    return;
+  }
+
+  res.render('signup');
 });
 
 module.exports = router;
