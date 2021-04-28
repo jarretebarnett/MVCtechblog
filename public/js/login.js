@@ -21,7 +21,6 @@ const loginForm = async (event) => {
   
 const signupForm = async (event) => {
     event.preventDefault();
-    console.log('button click');
 
     const name = document.querySelector('#name-signup').value.trim();
     const email = document.querySelector('#email-signup').value.trim();
@@ -44,7 +43,7 @@ const signupForm = async (event) => {
   
 document
   .querySelector('.login-form')
-  .addEventListener('submit', loginForm);
+  .addEventListener('Submit', loginForm);
   
 document
   .querySelector('.signup-form')

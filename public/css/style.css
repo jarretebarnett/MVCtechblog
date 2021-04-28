@@ -2,6 +2,12 @@ body {
     font-family: 'Roboto';
 };
 
+h2 {
+    font-size: 40px;
+    text-align: center;
+    color: #1b89bc;
+}
+
 a.navbar-brand {
     color :#1b89bc;
     text-decoration: #1b89bc;
