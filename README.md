@@ -29,9 +29,7 @@ There are no other contributors to the project.
 
 ![homepage](assets/mytechblog.png)
 
-![login](assets/mytechbloglogin.png)
-
-![signup](assets/mytechblogsignup.png)
+![profile](assets/mytechblogprofile.png)
 
 ## Questions
 
