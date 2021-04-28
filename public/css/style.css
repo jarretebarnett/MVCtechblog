@@ -2,12 +2,6 @@ body {
     font-family: 'Roboto';
 };
 
-h2 {
-    font-size: 40px;
-    text-align: center;
-    color: #1b89bc;
-}
-
 a.navbar-brand {
     color :#1b89bc;
     text-decoration: #1b89bc;
@@ -49,6 +43,16 @@ header {
     flex-flow: wrap;
 }
 
+h2 {
+    font-size: 40px;
+    text-align: center;
+    color: #1b89bc;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
+
 p {
     font-size: 20px;
     text-align: center;
@@ -57,4 +61,8 @@ p {
     flex-direction: row;
     justify-content: space-around;
     flex-flow: wrap;
+}
+
+label {
+    color: #1b89bc;
 }

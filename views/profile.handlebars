@@ -2,6 +2,20 @@
     <div class="row">
         <div class="column" style="max-width: 45rem;">
             <h2>Welcome, {{name}}!</h2>
+            <br>
+            <br>
+            <p>Write a Post</p>
+            <br>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Title</label>
+                <input type="email" class="form-control" id="post-title" placeholder="Enter a Title">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Description</label>
+                <textarea class="form-control" id="post-desc" rows="3"></textarea>
+            </div>
+            <br>
+            <a class="post" type="button" style="color: #1b89bc;">Post</a>
         </div>
     </div>
 </div>

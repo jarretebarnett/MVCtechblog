@@ -14,14 +14,13 @@
   <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
       <a class="navbar-brand" href="/">myTechBlog!</a>
+        {{#if logged_in}}
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/">Home</a>
-          </li>
-          <li class="nav-item">
-            {{!-- <a class="nav-link active" href="#"></a> --}}
+            <a class="logout" type="button" style="color: #1b89bc;">Logout</a>
           </li>
         </ul>
+        {{/if}}
     </div>
   </nav>
   <br>

@@ -23,10 +23,6 @@ Post.init(
       allowNull: false,
       defaultValue: DataTypes.NOW,
     },
-    needed_funding: {
-      type: DataTypes.FLOAT,
-      allowNull: false,
-    },
     blogger_id: {
       type: DataTypes.INTEGER,
       references: {
