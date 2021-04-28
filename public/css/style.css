@@ -1,7 +1,16 @@
 body {
     font-family: 'Roboto';
-    text-decoration: none;
 };
+
+a.navbar-brand {
+    color :#1b89bc;
+    text-decoration: #1b89bc;
+}
+
+a.nav-link.active {
+    color: #1b89bc;
+    text-decoration: #1b89bc;
+}
 
 div.container {
     display: flex;
