@@ -28,8 +28,8 @@
   <br>
   <br>
   {{{ body }}}
-  <script src="/js/login.js"></script>
-  <script src="/js/profile.js"></script>
+  {{#if logged_in}}
   <script src="/js/logout.js"></script>
+  {{/if}}
 </body>
 </html>

@@ -27,6 +27,8 @@ There are no other contributors to the project.
 
 ## Demo
 
+Deployed application can be found here: https://techblogmvc.herokuapp.com/
+
 ![homepage](assets/mytechblog.png)
 
 ![profile](assets/mytechblogprofile.png)
