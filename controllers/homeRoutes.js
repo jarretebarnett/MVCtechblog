@@ -24,12 +24,31 @@ router.get('/', async (req, res) => {
   }
 });
 
+router.get('/posts', async (req, res) => {
+  try {
+    console.log(req.session.blogger_id)
+    const postData = await Post.findAll({
+      where: post.blogger_id = req.session.blogger_id
+    });
+
+    console.log(postData);
+    const posts = postData.map((post) => post.get({ plain: true }));
+
+    res.render('allposts', { 
+      posts, 
+      logged_in: req.session.logged_in 
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+})
+
 router.get('/posts/:id', async (req, res) => {
   try {
-    const postData = await Post.findByPk({
+    const postData = await Post.findByPk(req.params.id, {
         include: [
           {
-            model: Blogger,
+            model: Blogger, 
             attributes: ['name']
           }
         ]
